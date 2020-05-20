@@ -1,13 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import MainTabBar from './navigation/main_tab_bar';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
+// disable really annoying in app warnings
+console.disableYellowBox = true;
+
+const App = (props) => {
+  return <MainTabBar />;
+};
+
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
